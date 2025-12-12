@@ -1,7 +1,7 @@
-RAG Q&A System
+# RAG Q&A System
 A Retrieval-Augmented Generation system capable of answering user questions by indexing and retrieving information from PDF documents. The system supports multi-session interactions and maintains conversation history for context-aware responses.
 
-Overview:-
+# Overview:-
 This project demonstrates a practical implementation of document-based question answering using a combination of:
 Document loaders
 Text chunking
@@ -10,7 +10,7 @@ Vector similarity search
 LLM-based response generation
 The UI is built in Streamlit to support PDF uploads, interactive chat, and persistent session handling.
 
-Features:-
+# Features:-
 Multi-session conversational interface
 PDF ingestion and preprocessing
 Text chunking with overlap
@@ -20,7 +20,7 @@ Context-aware question refinement
 Answer generation using Groq or other LLMs
 Session history stored in memory for continuity
 
-System Architecture :-
+# System Architecture :-
 User uploads one or more PDFs
 Text is extracted and chunked
 Embeddings are generated for each chunk
@@ -30,7 +30,7 @@ Relevant chunks are retrieved
 LLM generates a grounded answer
 Response and history are displayed in the UI
 
-Tech Stack:-
+# Tech Stack:-
 Python
 LangChain
 HuggingFace Embeddings
@@ -39,7 +39,7 @@ Groq API / LLM of choice
 Streamlit
 PyPDFLoader
 
-Project Structure:-
+# Project Structure:-
 RAG-QA-System/
 │
 ├── app.py
@@ -52,12 +52,13 @@ RAG-QA-System/
 ├── requirements.txt
 └── README.md
 
-Installation:-
+# Installation:-
 pip install -r requirements.txt
 streamlit run app.py
 
-Future Enhancements:-
+# Future Enhancements:-
 Add support for multiple file formats
 Implement long-term memory
 Add evaluation metrics
 Deploy on cloud
+
