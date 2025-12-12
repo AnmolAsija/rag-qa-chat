@@ -1,42 +1,63 @@
-# RAG Q&A Chat System
+RAG Q&A System
+A Retrieval-Augmented Generation system capable of answering user questions by indexing and retrieving information from PDF documents. The system supports multi-session interactions and maintains conversation history for context-aware responses.
 
-Interactive Retrieval-Augmented Generation (RAG) system with PDF uploads and chat history using Streamlit.
+Overview:-
+This project demonstrates a practical implementation of document-based question answering using a combination of:
+Document loaders
+Text chunking
+Embedding models
+Vector similarity search
+LLM-based response generation
+The UI is built in Streamlit to support PDF uploads, interactive chat, and persistent session handling.
 
-## Project Structure
-- `streamlit_app.py` : Main Streamlit app
-- `requirements.txt` : Python dependencies
-- `.env.example` : Placeholder for API keys
+Features:-
+Multi-session conversational interface
+PDF ingestion and preprocessing
+Text chunking with overlap
+Embedding generation using HuggingFace models
+Vector database using Chroma
+Context-aware question refinement
+Answer generation using Groq or other LLMs
+Session history stored in memory for continuity
 
+System Architecture :-
+User uploads one or more PDFs
+Text is extracted and chunked
+Embeddings are generated for each chunk
+Chroma vector store indexes the embeddings
+User question is reformulated using history
+Relevant chunks are retrieved
+LLM generates a grounded answer
+Response and history are displayed in the UI
 
-## Installation
+Tech Stack:-
+Python
+LangChain
+HuggingFace Embeddings
+ChromaDB
+Groq API / LLM of choice
+Streamlit
+PyPDFLoader
 
-```bash
-git clone https://github.com/yourusername/rag-qa-chat.git
-cd rag-qa-chat
-python -m venv venv
-source venv/bin/activate    # Windows: venv\Scripts\activate
+Project Structure:-
+RAG-QA-System/
+│
+├── app.py
+├── rag_pipeline.py
+├── embeddings/
+├── vectorstore/
+├── utils/
+│   └── text_processing.py
+│
+├── requirements.txt
+└── README.md
+
+Installation:-
 pip install -r requirements.txt
+streamlit run app.py
 
-
-
-## Running the App
-streamlit run streamlit_app.py
-
-
-Visit http://localhost:8501 in your browser.
-
-## Features
-
-Upload multiple PDF documents and query their content.
-
-Session-based chat history per user.
-
-History-aware question reformulation for context.
-
-Context-aware, concise answers from LLM using Groq API.
-
-Streamlit interface for interactive use.
-
-Tools/Technologies
-
-Python, Streamlit, LangChain, Groq API, HuggingFace Embeddings, Chroma, PyPDFLoader
+Future Enhancements:-
+Add support for multiple file formats
+Implement long-term memory
+Add evaluation metrics
+Deploy on cloud
