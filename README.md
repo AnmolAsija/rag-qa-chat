@@ -4,10 +4,15 @@ A Retrieval-Augmented Generation system capable of answering user questions by i
 # Overview:-
 This project demonstrates a practical implementation of document-based question answering using a combination of:
 Document loaders
+
 Text chunking
+
 Embedding models
+
 Vector similarity search
+
 LLM-based response generation
+
 The UI is built in Streamlit to support PDF uploads, interactive chat, and persistent session handling.
 
 # Features:-
@@ -62,18 +67,22 @@ RAG-QA-System/
 
 │   └── text_processing.py
 │
+
 ├── requirements.txt
 
 └── README.md
 
 # Installation:-
 pip install -r requirements.txt
+
 streamlit run app.py
 
 # Future Enhancements:-
 Add support for multiple file formats
+
 Implement long-term memory
 Add evaluation metrics
 Deploy on cloud
+
 
 
