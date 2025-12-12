@@ -17,12 +17,19 @@ The UI is built in Streamlit to support PDF uploads, interactive chat, and persi
 
 # Features:-
 Multi-session conversational interface
+
 PDF ingestion and preprocessing
+
 Text chunking with overlap
+
 Embedding generation using HuggingFace models
+
 Vector database using Chroma
+
 Context-aware question refinement
+
 Answer generation using Groq or other LLMs
+
 Session history stored in memory for continuity
 
 # System Architecture :-
@@ -44,11 +51,17 @@ Response and history are displayed in the UI
 
 # Tech Stack:-
 Python
+
 LangChain
+
 HuggingFace Embeddings
+
 ChromaDB
+
 Groq API / LLM of choice
+
 Streamlit
+
 PyPDFLoader
 
 # Project Structure:-
@@ -81,8 +94,11 @@ streamlit run app.py
 Add support for multiple file formats
 
 Implement long-term memory
+
 Add evaluation metrics
+
 Deploy on cloud
+
 
 
 
