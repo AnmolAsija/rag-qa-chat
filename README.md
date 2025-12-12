@@ -22,12 +22,19 @@ Session history stored in memory for continuity
 
 # System Architecture :-
 User uploads one or more PDFs
+
 Text is extracted and chunked
+
 Embeddings are generated for each chunk
+
 Chroma vector store indexes the embeddings
+
 User question is reformulated using history
+
 Relevant chunks are retrieved
+
 LLM generates a grounded answer
+
 Response and history are displayed in the UI
 
 # Tech Stack:-
@@ -42,14 +49,21 @@ PyPDFLoader
 # Project Structure:-
 RAG-QA-System/
 │
+
 ├── app.py
+
 ├── rag_pipeline.py
+
 ├── embeddings/
+
 ├── vectorstore/
+
 ├── utils/
+
 │   └── text_processing.py
 │
 ├── requirements.txt
+
 └── README.md
 
 # Installation:-
@@ -61,4 +75,5 @@ Add support for multiple file formats
 Implement long-term memory
 Add evaluation metrics
 Deploy on cloud
+
 
